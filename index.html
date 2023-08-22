@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="script.js" defer></script>
+    <title>jQuery - Dados</title>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Simulador de Dados</h1>
+        <div class="input-group mb-3">
+            <input id="qtdDados" type="text" class="form-control" placeholder="Quantidade de Dados">
+        </div>
+        <div class="input-group mb-3">
+            <input id="qtdFaces" type="text" class="form-control" placeholder="Quantidade de Faces do Dado">
+        </div>
+        <div class="d-grid gap-2 col-1 mx-auto">
+            <button id="submit" type="submit" class="btn btn-primary" onclick="calcular()">Jogar</button>
+        </div>
+        <div class="row mt-5" hidden="true">
+            <div class="col-sm-6 text-center">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Dado</th>
+                            <th scope="col">Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-sm-6">
+                <h4 class="text-center">Soma dos Dados</h4>
+                <h1 id="soma" class="text-center"></h1>
+                <h4 class="text-center mt-5">Maior Resultado</h4>
+                <h1 id="maior" class="text-center"></h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
